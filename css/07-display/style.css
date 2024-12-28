@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* This is display none property */
+
+.none {
+  display: none;
+}
+.none1 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+.none2 {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+}
+.none3 {
+  background-color: palegoldenrod;
+  height: 100px;
+  width: 100px;
+}
+
+/* this is display inline - ignoring height width also padding margin*/
+
+.inline {
+  border: 2px solid black;
+  display: inline;
+}
+.inline1 {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+}
+.inline2 {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+}
+.inline3 {
+  background-color: brown;
+  height: 100px;
+  width: 100px;
+}
+
+/* this is display block */
+
+.block {
+  display: block;
+  margin: 5px;
+}
+.block1 {
+  background-color: brown;
+  height: 100px;
+  width: 100px;
+  border: 5px solid black;
+  border-style: double dotted dashed solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+}
+.block2 {
+  background-color: blueviolet;
+  height: 100px;
+  width: 100px;
+}
+.block3 {
+  background-color: brown;
+  height: 100px;
+  width: 100px;
+}
+
+/* this is inline block  */
+
+.inlineb {
+  display: inline-block;
+  margin: 80px;
+}
+
+.inlineblock1 {
+  background-color: peru;
+  height: 100px;
+  width: 100px;
+  overflow: auto;
+}
+.inlineblock2 {
+  background-color: burlywood;
+  height: 100px;
+  width: 100px;
+}
+.inlineblock3 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+/* this is flex display  */
+.bg {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
+
+.contenior {
+  border: 5px solid red;
+  max-width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+.produts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  background-color: aquamarine;
+  margin: 1px;
+  width: 24.9%;
+  border: 2px solid brown;
+}

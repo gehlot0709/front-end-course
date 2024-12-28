@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+.tran{
+    background-image: url(https://www.cuttingedgefirewood.com/cdn/shop/articles/cuttingedgefirewoodcom_471003301_6a6e863c-f752-484a-98eb-25155da445b7.jpg?v=1701205806);
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+}
+.text{
+    text-align: center;
+    font-size: 150px;
+}
+
+.c1{
+    background-image: url(image/image.png);
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+}
+.c2{
+    background-image: url(image/images.jpeg);
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+}
+.c3{
+    background-image: url(image/s.jpeg);
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+}
+.c4{
+    background-image: url(image/summer-8722384_640.jpg);
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+}
+

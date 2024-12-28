@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.borderbgc{
+    height: 250px;
+    width: 250px;
+    background-color: pink;
+    border: 10px solid transparent;
+    border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeYNuL2S2jV1JoJd3SMcB9U7XSME2JjTI-zQ&s) 10% ;
+    border-image-width: 10px;
+    border-image-repeat: none;
+}

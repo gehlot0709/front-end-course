@@ -1,0 +1,61 @@
+.text-align{
+    text-align: right;
+}
+
+.Text-decoration{
+        text-decoration: underline dotted red;
+}
+
+.font-weight{
+    font-weight: 900;
+}
+
+.font-family{
+    font-family: cursive;
+}
+
+.line-height{
+    line-height: 50px;
+}
+
+.text-transfrom{
+    text-transform: uppercase;
+}
+
+.letter-spacing{
+    letter-spacing: 5px;
+}
+
+.word-spacing{
+        word-spacing: 5px;    
+}
+
+.font-style{
+    font-style: italic;
+}
+
+.text-indent{
+    text-indent: 50px;
+}
+.em{
+    font-size: 200px;
+}
+.text-shadow{
+    text-shadow: 2px 4px 5px red;
+    font-size: 0.5em;
+    margin-left: 5px;
+    padding-left: 140px;
+ /* em is applicable in parent properties */
+}
+.text-shadow:hover{
+    box-shadow: 4px 5px 10px blue;
+    
+    width: 50%;
+    transition: ease-in-out 1s;
+    border-radius: 50px;
+    cursor: pointer;r
+}
+
+.direction{
+    direction: rtl;
+}

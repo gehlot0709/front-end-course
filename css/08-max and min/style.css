@@ -1,0 +1,10 @@
+.box{
+    max-width: 1000px;
+    max-height: 150px;
+    background-color: burlywood;
+}
+.width{
+        min-width: 10%;
+        height: 15px;
+        background-color: red;
+}   

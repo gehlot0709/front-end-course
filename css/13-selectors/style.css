@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conatiner {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+/* all selectors */
+
+/* single space */
+span.box p {
+  background-color: red;
+}
+
+/* Selects every <p> element that are direct children of a <div> element(div > p) */
+.conatiner > .box {
+  background-color: gray;
+}
+
+/* + selector Selects the first <p> element that is placed immediately after <div> elements (div + p) */
+
+.box3 + .box4 {
+  background-color: black;
+}
+
+/* Selects all <div> elements and all <p> elements(div, p) */
+.box3,
+.box5 {
+  background-color: bisque;
+}
+
+/* Selects all elements with name2 that is a descendant of an element with name1 */
+.box6.box7 {
+  background-color: blueviolet;
+}
+
+/* Selects all <ul> elements that are preceded by a <p> element */
+p ~ ul {
+  background-color: gold;
+  border: 1px solid gray;
+}
+
+.active {
+  width: 250px;
+  height: 250px;
+  background-color: cadetblue;
+  transition: 2s;
+  align-content: center;
+  text-align: center;
+}
+
+/* 	a:active	Selects the active link */
+.active:active {
+  width: 150px;
+  height: 150px;
+  background-color: rebeccapurple;
+}
+
+/* 	a:hover p:hover	Selects element on mouse over */
+
+.hover,
+.focu {
+  width: 250px;
+  height: 250px;
+  background-color: pink;
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+  transition: 2s;
+}
+.hover:hover {
+  width: 300px;
+  height: 300px;
+  background-color: brown;
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+}
+
+/*input:focus  select:focus	Selects the element that gets focus. Most used for form elements */
+
+input:focus {
+  background-color: yellow;
+}
+
+input::placeholder {
+  color: red;
+  opacity: 0.5;
+}
+
+/*chilld selectors */
+
+.first-Child:last-child {
+  background-color: red;
+}
+.first-Child:nth-child(3) {
+  background-color: pink;
+}
+.first-Child:first-child {
+  background-color: purple;
+}
+/* <!-- first letter elements --> */
+.first-letter {
+  font-size: 18px;
+  text-align: center;
+  margin: 25px;
+}
+
+.first-letter::first-letter {
+  font-size: 28px;
+}
+
+/* first line element selectors */
+
+.first-letter::first-line {
+  background-color: aqua;
+}
+
+/* selection selectors */
+
+.first-letter::selection {
+  background-color: pink;
+  color: white;
+}
+
+/* overflow and scroll propertis*/
+.overflow{
+    height: 250px;
+    width: 300px;
+    background-color: red;
+    overflow: auto;
+}
+
+.overflow::-webkit-scrollbar{
+    width: 20px;
+}
+.overflow::-webkit-scrollbar-track{
+        background-color: #f1f1f1;
+}
+.overflow::-webkit-scrollbar-thumb{
+    background: pink;
+}
+.overflow::-webkit-scrollbar-thumb:hover{
+    background: blue;
+}
+.overflow::-webkit-scrollbar-button{
+    background: darkgray;
+
+}
+
