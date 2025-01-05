@@ -123,8 +123,8 @@ font-family: cursive;
     margin-top: 96px;
     margin-bottom: 96px;
 }
-.resume .education-inner .col-6{
-    border-left: 2px solid grey;
+.resume .education-inner .col-lg-6,.resume .education-inner .col-lg-12{
+    border: 2px solid grey;
 }
 .education-details{
     position: relative;
@@ -158,4 +158,9 @@ font-family: cursive;
 }
 .education-details:hover::after{
     background-color: rgb(250, 0, 0);
+}
+
+/* ===modal==== */
+.modal .modal-dialog{
+    max-width: 40% !important;
 }
