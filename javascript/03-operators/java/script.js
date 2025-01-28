@@ -1,7 +1,7 @@
 /* ================================  operators  ============================================================*/
 
 
-/* ===================== Addition Operator ====================*/
+/* == Addition Operator == */
 
 let maths = 5;
 let sci = 4;
@@ -75,9 +75,37 @@ console.log( a >= b)
 console.log ( a <= b)
 
 
+// ================JavaScript Assignment Operators
 
+let gehlot = 2;
+let pratham = 4;
 
+console.log(gehlot+=pratham)
+console.log(gehlot-=pratham)
+console.log(gehlot*=pratham);
+console.log(gehlot/=pratham);
+console.log(gehlot%=pratham);
+console.log(gehlot**=pratham);
 
+// Logical Assignment Operators &&= ( always two condition same then print output)
+
+let Name = "pratham";
+let name2 = "ahir";
+
+if (Name == name2 && Name != name2) {
+    console.log("postivie answer");
+} else {
+    console.log("not true");
+}
+
+// || ( only one condition is true then print output)
+if (Name == name2 || Name != name2) {
+    console.log("postivie answer");
+} else {
+    console.log("not true");
+}
+
+// 
 
 
 

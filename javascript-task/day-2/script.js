@@ -1,0 +1,72 @@
+/* Q.2 Write a Program to create a menu-driven program for Telecom call service conversation using nested switch case.
+For example,
+Press 1 for English
+Press 2 for Hindi
+Press 3 for Gujarati
+Enter your choice: 1
+
+Press 1 for Internet Recharge
+Press 2 for Top-up Recharge
+Press 3 for Special Recharge
+Enter your choice: 2
+
+You have successfully done a Top-up Recharge.
+*/
+
+let lang = Number(prompt("Press-1 English \nPress-2 Hindi \nPress-3 Gujrati"))
+let Recharge ;
+
+switch (lang) {
+    case 1: //english
+        Recharge = Number(prompt("Press-1 top-up \nPress-2 special \ninternet"))
+        switch (Recharge) {
+            case 1 :console.log("done top-up recharge");
+                break;
+
+            case 2:console.log("done special recharge");
+                break;
+
+            case 3 :console.log("done - internet recharge");
+            break;
+
+            default:
+                break;
+        }
+        break;
+        
+        case 2:
+        Recharge = Number(prompt("Press-1 top-up \nPress-2 special \ninternet"))
+        switch (Recharge) {
+            case 1 :console.log(" apka recharge ho gaya hai");
+                break;
+
+            case 2:console.log("done apka special recharge");
+                break;
+
+            case 3 :console.log("done apka internet recharge");
+            break;
+            
+            default:
+                break;
+        }
+        break;
+
+        case 3:
+            Recharge = Number(prompt("Press-1 top-up \nPress-2 special \ninternet"))
+            switch (Recharge) {
+                case 1 :console.log("done thay gayu top-up recharge");
+                    break;
+    
+                case 2:console.log("done thay gayu special recharge");
+                    break;
+    
+                case 3 :console.log("done thayu internet recharge");
+                break;
+                
+                default:
+                    break;
+            }
+
+    default:
+        break;
+}
