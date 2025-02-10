@@ -7,9 +7,13 @@
   </head>
   <body>
     <script>
-      let arr = [11, 15, 16, 50, 50];
-      for (let i = 0; i < 5; i++) {
-        console.log(`${i} : ${arr[i]}`);
+      let arr = [11, 15, 20, 55];
+      for (let i in arr) {
+        console.log(`${i}:${arr[i]}`);
+      }
+
+      for (let i of arr) {
+        console.log(i);
       }
     </script>
   </body>

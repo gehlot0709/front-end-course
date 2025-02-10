@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-        <script>
-            let obj = {
-             firstname : "pratham",
-             middlename : "dharmichand",
-             lastname : "gehlot"
-            }
-            console.log(obj.lastname);
-            console.log(obj["middlename"]);
-        </script>
-</body>
+  </head>
+  <body>
+    <script>
+      let obj = {
+        firstname: "pratham",
+        middlename: "dharmichand",
+        lastname: "gehlot",
+      };
+      console.log(obj.lastname);
+      console.log(obj["middlename"]);
+      console.log(Object.keys(obj));
+      console.log(Object.values(obj));
+
+      // 
+      console.log(Object.entries(obj));
+
+    </script>
+  </body>
 </html>
