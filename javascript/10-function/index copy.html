@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    // simple function create 
+      function f_name() {
+        console.log("hello");
+      }
+      f_name();
+      // Function Expressions:
+      const greet = function () {
+        console.log("Hello, world!");
+      };
+      greet();
+
+      // ========
+
+      let a = 10;
+      let b = 20;
+      let c = 30;
+      function one(x, y) {
+        document.write("<br>" + "done" + "<br>");
+        return x + y;
+      }
+      document.write("a plus b is : ", one(a, b), "<br>");
+      document.write("b plus c  is : ", one(b, c), "<br>");
+      document.write("c plus a is : ", one(c, a));
+
+      //   ====== arrow function
+
+      const sum = (p, q) => {
+        return p + q;
+      };
+      document.write("<hr>" + sum(15, 15));
+    </script>
+  </body>
+</html>
