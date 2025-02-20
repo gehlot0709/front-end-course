@@ -1,0 +1,17 @@
+.pop{
+    display: none;
+    background-color: grey;
+    padding: 5px 15px;
+    color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: -1;
+    left: 320px;
+    transition: 2s;
+}
+form{
+    position: relative;
+}
+.show{
+    display: block;
+}

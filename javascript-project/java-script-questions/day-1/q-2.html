@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function selectLanguageAndRecharge() {
+        let lang = Number(
+          prompt("Press-1 English \nPress-2 Hindi \nPress-3 Gujrati")
+        );
+        let Recharge;
+
+        switch (lang) {
+          case 1: //english
+            Recharge = Number(
+              prompt("Press-1 top-up \nPress-2 special \ninternet")
+            );
+            switch (Recharge) {
+              case 1:
+                console.log("done top-up recharge");
+                break;
+
+              case 2:
+                console.log("done special recharge");
+                break;
+
+              case 3:
+                console.log("done - internet recharge");
+                break;
+
+              default:
+                break;
+            }
+            break;
+
+          case 2:
+            Recharge = Number(
+              prompt("Press-1 top-up \nPress-2 special \ninternet")
+            );
+            switch (Recharge) {
+              case 1:
+                console.log(" apka recharge ho gaya hai");
+                break;
+
+              case 2:
+                console.log("done apka special recharge");
+                break;
+
+              case 3:
+                console.log("done apka internet recharge");
+                break;
+
+              default:
+                break;
+            }
+            break;
+
+          case 3:
+            Recharge = Number(
+              prompt("Press-1 top-up \nPress-2 special \ninternet")
+            );
+            switch (Recharge) {
+              case 1:
+                console.log("done thay gayu top-up recharge");
+                break;
+
+              case 2:
+                console.log("done thay gayu special recharge");
+                break;
+
+              case 3:
+                console.log("done thayu internet recharge");
+                break;
+
+              default:
+                break;
+            }
+
+          default:
+            break;
+        }
+      }
+      selectLanguageAndRecharge();
+    </script>
+  </body>
+</html>

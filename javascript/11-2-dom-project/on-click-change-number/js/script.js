@@ -9,4 +9,7 @@ function decrement(params) {
     if (count!==0) {
         counter.innerText = --count;
     } 
-}d
+}
+function reset(){
+    counter.innerText="00"
+}
