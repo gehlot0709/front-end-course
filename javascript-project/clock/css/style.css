@@ -4,3 +4,9 @@
 .clock h1{
     margin-left: 16px;
 }
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
