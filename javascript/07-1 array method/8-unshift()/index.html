@@ -1,0 +1,16 @@
+<p id="demo"></p>
+<p id="length"></p>
+<button>Unshift</button>
+<script>
+  const fruits = ["mango", "apple"];
+
+  // Display the initial fruits array
+  document.querySelector("#demo").innerText = fruits;
+
+  document.querySelector("button").onclick = () => {
+    let length = fruits.unshift("kiwi"); // Add "kiwi" to the beginning of the array and get the new length
+    document.querySelector("#demo").innerText = fruits; // Display the updated array
+    document.querySelector("#length").innerText = "New length: " + length; // Display the length in a separate element
+    document.querySelector("button").disabled = true;
+  };
+</script>

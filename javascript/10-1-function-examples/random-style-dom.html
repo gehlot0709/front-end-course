@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="color">Random color</p> <!-- Paragraph element with class 'color' -->
+    <button>hello</button>
+<script>
+    // Select the paragraph element with class 'color'
+    const Ptag = document.querySelector(".color");
+    const btn = document.querySelector("button");
+
+ // Function to generate a random number between min and max (inclusive)
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+// Function to generate a random color
+function randomColor() {
+    // Generate random values for red, green, and blue components (0-255)
+    let red = getRandomNumber(0, 255);
+    let green = getRandomNumber(0, 255);
+    let blue = getRandomNumber(0, 255);
+    // Return the color in rgb format
+    return `rgb(${red},${green},${blue})`;
+}
+
+// Function to generate a random size
+function randomSize() {
+    return getRandomNumber(16, 148) + 'px';
+}
+
+const fontWeights = ["bolder","bold","lighter"]
+
+// Function to get a random font weight
+function randomFontWeight() {
+    const randomIndex = getRandomNumber(0, fontWeights.length - 1);
+    return fontWeights[randomIndex];
+}
+
+
+// Event listener for the button
+btn.addEventListener("click", function() {
+    Ptag.style.backgroundColor = randomColor();
+    Ptag.style.color = randomColor();
+    Ptag.style.fontSize = randomSize();
+    Ptag.style.fontWeight = randomFontWeight();
+});
+ 
+
+</script>
+
+
+    </script>
+</body>
+</html>

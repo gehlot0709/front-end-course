@@ -1,0 +1,6 @@
+.clock{
+    display: flex;
+}
+.clock h1{
+    margin-left: 16px;
+}

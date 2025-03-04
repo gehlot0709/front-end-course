@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <style>
+      .name {
+        animation: mymove 4s infinite;
+        position: relative;
+        margin: 48px;
+      }
+      .p{
+        margin: 48px;
+      }
+      button{
+        margin: 16px;
+      }
+      @keyframes mymove {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 200px;
+        }
+      }
+
+      @keyframes mynewmove {
+        from {
+         bottom: 0px;
+        }
+        to {
+         bottom: 248px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="name">change name</h1>
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus, unde?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, iure. Animi atque minus ducimus quaerat, ullam cum, amet iusto, quod consequuntur eos laudantium assumenda adipisci quisquam aut deleniti sed? Veritatis.
+        </p>
+        <button class="btn">click</button><br />
+        <button class="btn2">click2</button>
+      </div>
+    </section>
+  </body>
+</html>

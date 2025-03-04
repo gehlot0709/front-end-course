@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p style="color:red">The shift() method removes the first array element and "shifts" all other elements to a lower index.</p>
+    <p id="shift"></p>
+    <p id="shift2"></p>
+    <button>Shift Element</button>
+
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+      // Display the initial fruits array
+      document.querySelector("#shift").innerText = fruits;
+
+      document.querySelector("button").onclick = () => {
+        let shift1 = fruits.shift();
+        document.querySelector("#shift").innerText = fruits;
+        document.querySelector("#shift2").innerText = shift1;
+        document.querySelector("button").disabled = true;
+      };
+    </script>
+  </body>
+</html>

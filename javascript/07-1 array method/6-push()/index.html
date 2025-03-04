@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="push"></h2>
+    <button>push</button>
+    <script>
+      const num = ["Banana", "Orange", "Apple", "Mango"];
+      document.querySelector(".push").innerText = num;
+
+      document.querySelector("button").onclick = () => {
+        num.push("kiwi");
+        document.querySelector(".push").innerText = num;
+        document.querySelector("button").disabled = true;
+      };
+    </script>
+  </body>
+</html>

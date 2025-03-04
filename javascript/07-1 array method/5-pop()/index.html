@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="pop"></h2>
+    <button>pop</button>
+    <script>
+      const car = ["bmw", "tata", "mahindra"];
+
+      // Display all cars initially
+      document.querySelector("#pop").innerText = car
+
+      document.querySelector("button").onclick = () => {
+        car.pop();
+        document.querySelector("#pop").innerText = car.join(",");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- A paragraph element where the content (array values) will be displayed -->
+    <p id="demo"></p>
+    <!-- A button to trigger the concatenation and update the content -->
+    <button>concatenate</button>
+
+    <script>
+      // Defines the first
+      const arr1 = ["Cecilie", "Lone"];
+      const arr2 = ["Emil", "Tobias", "Linus"];
+      const arr3 = ["Robin", "Morgan"];
+
+      // Sets the initial content of the paragraph to the first array
+      document.querySelector("#demo").innerText = arr1;
+
+      // Adds an event listener to the button for the click event
+      document.querySelector("button").onclick = () => {
+        // Concatenates the three arrays into one combined array
+        const mychildren = arr1.concat(arr2, arr3);
+        // Updates the paragraph content with the concatenated array
+        document.querySelector("#demo").innerText = mychildren;
+      };
+    </script>
+  </body>
+</html>

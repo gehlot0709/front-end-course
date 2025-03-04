@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Example 1: Generate a random number
+
+      // Function to generate a random number within a given range (min, max)
+      function genrandom(min, max) {
+        // Math.random() generates a random decimal number between 0 (inclusive) and 1 (exclusive)
+        // Multiplying by (max - min + 1) scales the range to [0, max - min + 1)
+        // Math.floor() rounds down to the nearest integer, giving a range of integers from 0 to max - min
+        // Adding min shifts the range to [min, max]
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      // Using the function to generate a random number between 1 and 10
+      document.write("Random number is: " + genrandom(1, 10) + "<br>" + "<hr>");
+
+      // ==================Example -2 Function to calculate the area of a rectangle===================
+      function calculateArea(length, width) {
+        return length * width;
+      }
+      let length1 = 10;
+      let width1 = 5;
+
+      document.write(
+        "Area of rectangle 1: ",
+        calculateArea(length1, width1),
+        "<br>","<hr>"
+      );
+
+      // =======================Function to convert Fahrenheit to Celsius =======================
+
+      function toCelsius(fahrenheit) {
+        return ((fahrenheit - 32) * 5) / 9;
+      }
+
+      // Using the function with different values
+      let temp1 = 68;
+      document.write(temp1 + "°F is " + toCelsius(temp1).toFixed(2) + "°C<br>"); //without toFixed(2)output ois 20.0000001 c
+
+      let temp2 = 100;
+      document.write(temp2 + "°F is " + toCelsius(temp2).toFixed(2) + "°C<br>");
+      document.write("<br>");
+      document.write("<hr>");
+      document.write("<br>");
+
+      // =============================2] example Function to find the maximum number in an array===================================
+      function maxvalue(arr){
+        return Math.max(...arr)
+      }
+      let max = [1,55,66,4,25,44]
+      document.write("max value is "+ maxvalue(max),"<br>","<hr>")
+
+      
+
+
+    </script>
+  </body>
+</html>

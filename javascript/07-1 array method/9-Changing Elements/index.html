@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="length"></p>
+    <button>change</button>
+    <script>
+      let fruit = ["apple", "mango"];
+      document.querySelector("#demo").innerText = fruit;    
+
+      document.querySelector("button").onclick = () => {
+        fruit[2] = "kiwi";
+        fruit[0] = "orange";
+        fruit[3] = "pineple";
+        document.querySelector("#demo").innerText = fruit;
+        document.querySelector("#length").innerText = "new length is: "+ fruit.length;
+      };
+    </script>
+  </body>
+</html>

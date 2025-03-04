@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Dice Rolls</title>
+  </head>
+  <body>
+    <script>
+      // Function to generate a random number within a given range
+      function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      // Function to simulate rolling a six-sided die
+      function rollDie() {
+        return getRandomNumber(1, 6);
+      }
+
+      // Rolling the die three times
+      document.write("Roll 1: " + rollDie() + "<br>");
+    </script>
+  </body>
+</html>
