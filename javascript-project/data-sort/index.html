@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+        .user {
+            list-style-type: none;
+            padding: 0;
+        }
+        .user li {
+            margin: 5px 0;
+        }
+        .col-3 {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            vertical-align: top;
+        }
+    </style>
+  </head>
+  <body>
+    <form>
+        <select>
+            <option value="0">id</option>
+            <option value="1">Sort by Name</option>
+            <option value="2">Sort by Grid</option>
+        </select>
+        <input type="text"  name="" id="search" placeholder="enter ">
+        <button type="submit">Sort</button>
+    </form>
+    <div id="place-users"></div>
+  </body>
+</html>
