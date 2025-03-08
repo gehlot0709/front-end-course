@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="demo"></p>
+    <script>
+      // Define an array of numbers
+      const arr = [112, 44, 552, 88, 772, 961, 22];
+
+      // Use the 'every' method to check if all values in the array meet a specific condition
+      const everyout = arr.every((value) => {
+        // Check if the value is even (i.e., divisible by 2 with no remainder)
+        return value % 2 === 0;
+      });
+
+      // Display the result in an HTML element with the class 'demo'
+      document.querySelector(".demo").innerHTML = everyout;
+    </script>
+  </body>
+</html>

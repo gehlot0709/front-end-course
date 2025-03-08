@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2></h2>
+    <p class="demo1"></p>
+    <p class="demo2"></p>
+    <p class="demo3"></p>
+
+    <script>
+      const students = [
+        { name: "pratham", score: 85 },
+        { name: "dixit", score: 95 },
+        { name: "aakash", score: 74 },
+        { name: "eipshita", score: 99 },
+      ];
+      let grade1 = {
+        min: 90,
+        max: 100,
+      };
+      let grade2 = {
+        min: 80,
+        max: 90,
+      };
+      let grade3 = {
+        min: 70,
+        max: 80,
+      };
+
+      let aGradeStudents = "";
+      students.forEach((student) => {
+        if (grade1.min < student.score && student.score < grade1.max) {
+          aGradeStudents += `<br>${student.name} passed with A grade<br>`;
+        }
+      });
+      document.querySelector(".demo1").innerHTML = aGradeStudents;
+
+      let bGradeStudents = "";
+      students.forEach((student) => {
+        if (grade2.min < student.score && student.score < grade2.max) {
+          bGradeStudents += `${student.name} passed with B grade<br>`;
+        }
+      });
+      document.querySelector(".demo2").innerHTML = bGradeStudents;
+      let cgradestudent = "";
+      students.forEach((student) => {
+        if (grade3.min < student.score && student.score < grade3.max) {
+          cgradestudent += `${student.name} passed with C grade`;
+        }
+      });
+
+      document.querySelector(".demo3").innerHTML = cgradestudent;
+      document.querySelector(".demo1").style.color = "red";
+      document.querySelector(".demo1").style.fontSize = "48px";
+      document.querySelector(".demo2").style.fontSize = "36px";
+      document.querySelector(".demo3").style.fontSize = "24px";
+
+      
+    </script>
+  </body>
+</html>

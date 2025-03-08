@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="r"></p>
+    <script>
+      // Define an array of numbers
+      const arr = [11, 55, 66, 44, 88];
+
+      // Use the 'reduce' method to calculate the sum of the elements in the array
+      const reduceout = arr.reduce((prev, curr, index, arr) => {
+        // Update the HTML element with the intermediate values during each iteration
+        document.querySelector(".r").innerHTML = `${(prev, curr)}`;
+        return prev + curr; // Return the cumulative sum
+      });
+
+      // Update the HTML element with the final result
+      document.querySelector(".r").innerHTML = `Final Sum: ${reduceout}`;
+    </script>
+  </body>
+</html>

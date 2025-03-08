@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="demo"></p>
+    <script>
+      // Create an array of numbers
+      const arr = [11, 22, 14, 56, 48, 555, 74];
+
+      // Use the `some` method to check if at least one value in the array satisfies a condition
+      const someout = arr.some((value) => {
+        // Check if the value is odd
+        return value % 2;
+      });
+
+      // Display the result in an HTML element with the class "demo"
+      document.querySelector(".demo").innerHTML = someout;
+    </script>
+  </body>
+</html>
