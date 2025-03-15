@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2></h2>
+    <h3></h3>
+    <script>
+        // without use new variable and swaping
+      let a = 20;
+      let b = 30;
+
+      a = a + b;
+      b = a - b;
+      a = a - b;
+
+      document.querySelector("h2").innerHTML =`value of A: ${a}` ;
+      document.querySelector("h3").innerHTML = `value of B:${b}`;
+    </script>
+  </body>
+</html>

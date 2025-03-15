@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4>
+      Write a JavaScript program to create an array of numbers and then
+      calculate the sum of all the numbers in the array.
+    </h4>
+    <p class="sum"></p>
+    <script>
+      let arr = [11, 22, 33, 44, 55];
+      let sum = arr.reduce((a, b) => {
+        return a + b;
+      });
+      document.querySelector(".sum").innerHTML = `Sum : ${sum}`;
+    </script>
+  </body>
+</html>

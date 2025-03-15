@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>concat</button>
+    <h4></h4>
+    <script>
+      let a = "hello";
+      let b = "world";
+      document.write(`${a}<br>`);
+      document.write(b);
+      document.querySelector("button").onclick = () => {
+        let c = a.concat(" ", b);
+        document.querySelector("h4").innerText = c;
+      };
+    </script>
+  </body>
+</html>

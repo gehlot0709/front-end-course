@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>hello world copy and paste try</p>
+    <script>
+      // Add an event listener for the 'copy' event on the document
+      document.addEventListener("copy", function (event) {
+        // Set the clipboard data to a custom message instead of the copied content
+        event.clipboardData.setData("text/plain", "sorry text is not copy");
+
+        // Prevent the default copy action to override with the custom behavior
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

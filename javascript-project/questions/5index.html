@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h6> Write a program that prints the numbers from 1 to 20, but for multiples of 3, it prints "Fizz" instead of the number, and for multiples of 5, it prints "Buzz." For numbers that are multiples of both 3 and 5, print "FizzBuzz."</h6><br> -->
+    <h2 class="print"></h2>
+    <script>
+      let a = Number(prompt("Enter your first number"));
+      let b = Number(prompt("Enter your second number"));
+
+      function print(a, b) {
+        let result =""
+        for (let index = a; index < b; index++) {
+          if (index % 3 === 0 && index % 5 === 0) {
+            result += `${index} FizzBuzz <br>`;
+          } else if (index % 5 === 0) {
+            result += `${index} Buzz <br>`;
+          } else if (index %3===0) {
+            result += `${index}  Fizz <br>`;
+          }else{
+            result += `${index} <br>`
+          }
+        }
+        document.querySelector(".print").innerHTML = result;
+      }
+      print(a, b);
+    </script>
+  </body>
+</html>

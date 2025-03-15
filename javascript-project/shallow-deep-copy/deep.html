@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let b = { name: "gehlot" };
+      let a = JSON.parse(JSON.stringify(b)); // Deep copy of b
+      let c = JSON.parse(JSON.stringify(a)); // Deep copy of a
+      c.name = "pratham";
+      console.log(b); // { name: "gehlot" }
+      console.log(a); // { name: "gehlot" }
+      console.log(c); // { name: "pratham" }
+    </script>
+  </body>
+</html>

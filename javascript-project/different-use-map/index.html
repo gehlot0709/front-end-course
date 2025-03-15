@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const users = [
+        { name: "pratham", age: 22 },
+        { name: "jaimin", age: 25 },
+      ];
+
+      const updatedUsers = users.map((user) => ({
+        ...user,
+        age: user.age + 5,
+      }));
+
+      updatedUsers.forEach((user) => {
+        document.write(`Name: ${user.name}, Age: ${user.age}<br>`);
+      });
+    </script>
+  </body>
+</html>

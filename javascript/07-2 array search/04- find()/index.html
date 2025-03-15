@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The find() method returns the value of the first array element that passes a test function.</p>
+    <h6></h6>
+    <script>
+        let arr = [4,9,5,7,10,25,88]
+        let first = arr.find((value)=>{
+            return value %2 === 0
+        })
+        document.querySelector("h6").innerHTML = first
+    </script>
+</body>
+</html>

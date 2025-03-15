@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="print"></p>
+    <script>
+      let student = [
+        {
+          username: "pratham",
+          age: 22,
+          grade: "a",
+        },
+        {
+          username: "eipshita",
+          age: 20,
+          grade: "a",
+        },
+      ];
+
+      function studets() {
+        let result = "";
+        student.forEach((stud) => {
+          result += `<hr>username:${stud.username}<br> Age:${stud.age}<br> Grade:${stud.grade}<br><hr>`;
+        });
+        document.querySelector(".print").innerHTML = result;
+      }
+      studets();
+    </script>
+  </body>
+</html>

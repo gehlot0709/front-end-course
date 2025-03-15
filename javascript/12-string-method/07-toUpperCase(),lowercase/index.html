@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4>hello world</h4>
+    <button>upper</button>
+
+    <script>
+      let h4 = document.querySelector("h4");
+      document.querySelector("button").onclick = change;
+
+      function change() {
+        if (h4.innerText === h4.innerText.toLowerCase()) {
+          h4.innerText = h4.innerText.toUpperCase();
+          document.querySelector("button").innerText = "lower";
+        } else {
+          h4.innerText = h4.innerText.toLowerCase();
+          document.querySelector("button").innerText = "upper";
+        }
+      }
+    </script>
+  </body>
+</html>

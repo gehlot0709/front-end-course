@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h5>
+      Create a program that asks the user for their age and tells them whether
+      they are a minor, an adult, or a senior citizen.
+    </h5>
+    <h2 class="age"></h2>
+
+    <script>
+      let a = Number(prompt("Enter your age "));
+      function age() {
+        let result = "";
+        if (a < 18) {
+          result = "minor";
+        } else if (a < 50) {
+          result = "adult";
+        } else {
+          result = "senior citizen";
+        }
+        document.querySelector(".age").innerHTML = result;
+      }
+      age();
+    </script>
+  </body>
+</html>

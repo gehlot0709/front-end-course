@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const cart = [
+        { product: "laptop", price: 61000 },
+        { product: "phone", price: 48000 },
+        { product: "earbuds", price: 8500 },
+        { product: "charger", price: 2000 },
+      ];
+
+      cart.forEach((item) => {
+        document.write(`Product: ${item.product}, Price: ${item.price}<br><br>`);
+      });
+      // reduce array me jata hai multiple value ko process karta hai aur single bana deta hai
+      const totalprice = cart.reduce((total, item) => total + item.price, 0);
+      document.write(`<hr>total all product price is: ${totalprice}`);
+    </script>
+  </body>
+</html>
