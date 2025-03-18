@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+/* header */
+header{
+  background-color: rgb(63, 59, 59);
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar .navbar-brand img {
+  width: 148px;
+}
+.navbar .navbar-brand {
+  padding: 0;
+}
+.navbar .nav-item:first-child a:hover {
+  color: white;
+}
+.navbar .nav-item:first-child a {
+  color: rgb(13, 224, 235);
+}
+.navbar .nav-item a:hover {
+  color: rgb(13, 224, 235);
+}
+.navbar .nav-item a {
+  color: white;
+}
+.navbar .nav-item .dropdown-menu {
+  margin-top: 10px;
+  transition: 0.1s;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item {
+  color: black;
+  transition: 0.1s;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: black;
+  color: rgb(13, 224, 235);
+}
+
+/* main */
+main{
+  margin-top: 58px;
+}
+main .container-fluid {
+  background-image: url("/main-img/27230.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* width: 100%; */
+  /* overflow: hidden; */
+}
+
+main h1 span {
+  color: rgb(13, 224, 235);
+}
+main .about-btn {
+  background-color: rgb(13, 224, 235);
+  transition: 0.5s;
+  text-decoration: none;
+  color: black;
+}
+main .about-btn:hover {
+  background-color: rgb(5, 99, 104);
+  color: white;
+}
+
+/* about */
+.about {
+  margin-top: 96px;
+}
+.about .about-img:hover img {
+  transform: scale(1);
+  border-radius: 0;
+  border: 8px solid white;
+}
+.about img {
+  transition: 0.6s;
+  transform: scale(0.8);
+  border: 8px solid white;
+  border-radius: 50%;
+}
+
+/* skills */
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.skills .skill-inner:first-child i {
+  color: blue;
+  animation: rotate360 2s linear infinite;
+}
+.skills .skill-inner:first-child .card {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.skills .skill-inner:first-child .card:hover {
+  transform: scale(1.1);
+}
+.skills .skill-inner:nth-child(2) i {
+  animation: rotate360 2s linear infinite; /* Rotate continuously */
+  color: forestgreen; /* Keep the color green */
+}
+
+.skills .skill-inner:nth-child(2) .card {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.skills .skill-inner:nth-child(2) .card:hover {
+  transform: scale(1.1);
+}
+.skills .skill-inner:last-child i {
+  transition: 0.5s;
+}
+.skills .skill-inner:last-child i {
+  color: orange;
+  animation: rotate360 2s linear infinite;
+}
+.skills .skill-inner:last-child .card {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.skills .skill-inner:last-child .card:hover {
+  transform: scale(1.1);
+}
+
+/* resume-inner */
+.resume-inner .resume-item {
+  position: relative;
+  margin-bottom: 96px;
+}
+.resume-inner .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 248px;
+  border-radius: 50px;
+  left: -18px;
+  top: -58px;
+  background: rgb(255, 255, 255);
+}
+.resume-inner .resume-item::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  left: -23px;
+  top: -18px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(13, 224, 235);
+  transition: 0.5s;
+}
+
+.resume-inner .resume-item:hover::after {
+  background: red;
+}
+/*  */
+.resume-inner .resume-item1 {
+  position: relative;
+  margin-bottom: 96px;
+}
+.resume-inner .resume-item1::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 160px;
+  border-radius: 50px;
+  left: -18px;
+  top: -14px;
+  background: rgb(255, 255, 255);
+}
+.resume-inner .resume-item1::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  left: -23px;
+  top: -18px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(13, 224, 235);
+  transition: 0.5s;
+}
+
+.resume-inner .resume-item1:hover::after {
+  background: red;
+}
+.resume-inner h5{
+  color: rgb(13, 224, 235);
+}
+.resume-inner h4 span{
+  color: rgb(13, 224, 235);
+  font-size: 86px;
+  font-family: cursive;
+}
+.resume-inner h4{
+  font-family: cursive;
+}

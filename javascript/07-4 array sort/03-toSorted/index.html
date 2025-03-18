@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>toSorted() Method Demonstration</title>
   </head>
   <body>
-    <p>toSorted method can not change orginal array</p>
+    <p>The <b>toSorted</b> method does not change the original array</p>
 
     <script>
+      // Define the original array
       let a = [11, 55, 6, 44, 11, 5, 2, 22, 33, 95, 29];
-      let ar = a.toSorted();
-      document.write(`${ar}:change array<br>`);
-      document.write(`<br>${a}:orginal array`);
+
+      // Use toSorted() to create a new sorted array (does not mutate original array)
+      let ar = a.toSorted((x, y) => x - y);
+
+      // Display the new sorted array
+      document.write(`<b>New Sorted Array:</b> ${ar}<br><br>`);
+
+      // Display the original array to show it remains unchanged
+      document.write(`<b>Original Array:</b> ${a}`);
     </script>
   </body>
 </html>

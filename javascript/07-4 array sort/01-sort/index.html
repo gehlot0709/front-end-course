@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Understanding the sort() Method</title>
 </head>
 <body>
+    <h2>How the sort() Method Affects the Original Array</h2>
     <h4></h4>
     <script>
-        let num = [1,55,33,4,3,22,55,56,58,80]
-        let sortednum = num.sort((a,b)=>a-b)
-        document.querySelector("h4").innerText = sortednum
-        document.write(num)
+        // Define the original array
+        let num = [1, 55, 33, 4, 3, 22, 55, 56, 58, 80];
+
+        // Display the original array before sorting
+        document.write(`<b>Original array (before sort):</b> ${num}<br>`);
+
+        // Sort the array in ascending order (numerically)
+        let sortednum = num.sort((a, b) => a - b);
+
+        // Update the <h4> element with the sorted array
+        document.querySelector("h4").innerText = `Sorted array: ${sortednum}`;
+
+        // Display the mutated original array after sorting
+        document.write(`<b><br>Original array (after sort):</b> ${num}`);
     </script>
 </body>
 </html>
