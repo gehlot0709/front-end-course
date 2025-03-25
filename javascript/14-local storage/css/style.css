@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Product Form */
+.product-form form label,
+.product-form form input {
+  display: block;
+}
+
+.product-form form div {
+  margin-bottom: 8px;
+}
+
+.product-form form .button-set input[type="button"] {
+  display: none;
+}
+
+/* Products */
+.products {
+  margin-top: 64px;
+}
+
+.products .product-item {
+}
