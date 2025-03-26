@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic DOM Manipulation Demo</title>
+  </head>
+  <body>
+    <a href="#" class="Btn updatebtn submit"></a>
+    <script>
+      // Select the body and anchor tag
+      const body = document.body;
+      const aTag = document.querySelector("a");
+
+      // Create and append a section element
+      const section = document.createElement("section");
+      body.appendChild(section);
+
+      // Create a div element, add a class, and append it to the section
+      const div = document.createElement("div");
+      div.classList.add("container");
+      section.appendChild(div);
+
+      // Log the anchor tag and its classes
+      console.log(aTag);
+      console.log(aTag.classList);
+
+      // Add a new class to the anchor tag and remove an existing class
+      aTag.classList.add("hello");
+      aTag.classList.remove("submit");
+
+      // Remove the div element from the section
+      section.removeChild(div);
+
+      // Replace the section with a header element
+      const header = document.createElement("header");
+      body.replaceChild(header, section);
+    </script>
+  </body>
+</html>
